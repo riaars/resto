@@ -1,0 +1,147 @@
+.recipe-card {
+  background-color: whitesmoke;
+  margin: 1em;
+  padding-top: 0.5em;
+  border-radius: 5%;
+}
+
+.recipe-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.recipe-area {
+  font-size: 12px;
+  color: black;
+}
+
+.recipe-thumb {
+  max-width: 10em;
+  border-end-start-radius: 5%;
+  border-end-end-radius: 5%;
+  max-height: auto;
+}
+
+.recipe-thumb-large {
+  max-width: 20em;
+  border-end-start-radius: 5%;
+  border-end-end-radius: 5%;
+  max-height: auto;
+}
+
+.card-grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-menu {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 2em;
+}
+
+.input-search {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5%;
+  margin: 5px;
+  font-size: small;
+}
+
+.btn-primary {
+  background-color: blue;
+  border: 0;
+  font-weight: 600;
+  color: white;
+  font-size: small;
+  padding: 10px;
+  border-radius: 5%;
+  margin: 5px;
+}
+
+.instructions {
+  padding: 2em;
+}
+
+.padding-sm {
+  padding: 2em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+.dropdown-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-button:hover {
+  background-color: #2980b9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: opacity 0.3s ease; /* Smooth fade effect */
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown-content .option-list {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdown-content .option-list:hover {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .flex-wrap {
+    flex-direction: column;
+  }
+
+  .recipe-thumb-large,
+  .recipe-thumb {
+    max-width: 15em;
+  }
+
+  /* .recipe-thumb {
+    max-width: 15em;
+  } */
+}
